@@ -1,0 +1,408 @@
+body {
+      font-family: 'Roboto Mono', monospace;
+      margin: 0;
+      background-color: #fff;
+      color: #000;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #f0f0f0;
+      padding: 10px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: #000;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: #ccc;
+    }
+
+    /* Main Content */
+    .main-content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .main-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .website-name {
+      font-size: 28px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .header-actions input[type="search"] {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background-color: #f0f0f0;
+      color: #000;
+    }
+
+    .header-actions button {
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: none;
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    /* Back Button */
+    .back-button {
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: none;
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    /* Dashboard Widgets */
+    .dashboard-widgets {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .widget {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      color: #000;
+    }
+
+    /* Courses Section */
+    .courses {
+      margin-bottom: 20px;
+    }
+
+    .course-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center; /* Center the cards */
+    }
+
+    .course-card {
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      color: #000;
+      width: 100%; /* Make cards full width */
+      max-width: 1200px; /* Limit card width */
+    }
+
+    .card-img-top {
+      width: 100%;
+      height: 400px; /* Increase image height */
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 15px;
+    }
+
+    .card-text {
+      font-size: 16px;
+      color: #000;
+    }
+
+    /* Charts and Tables */
+    .charts-and-tables {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 20px;
+    }
+
+    .chart {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      color: #000;
+    }
+
+    .bar-graph {
+      display: flex;
+      height: 200px;
+      align-items: flex-end;
+      justify-content: space-around;
+    }
+
+    .bar {
+      width: 40px;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .pie-chart {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .chart-labels {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .chart-labels span {
+      display: flex;
+      align-items: center;
+    }
+
+    .chart-labels i {
+      margin-right: 5px;
+    }
+
+    .slice::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: inherit;
+      transform-origin: 0 50%;
+      transform: rotate(calc(var(--size) * 1deg));
+      border-radius: 50%;
+      display: block;
+    }
+
+    /* Login Section */
+    .login-section {
+      background-color: #f0f0f0;
+      color: #000;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .login-section h2 {
+      color: #000;
+      margin-bottom: 15px;
+    }
+
+    .login-section input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      color: #000;
+    }
+
+    .login-section button {
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: none;
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    /* Leaderboard Section */
+    .leaderboard {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    .leaderboard h2 {
+      margin-bottom: 15px;
+    }
+
+    .leaderboard table {
+      width: 100%;
+      border-collapse: collapse;
+      color: #000;
+    }
+
+    .leaderboard th,
+    .leaderboard td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .leaderboard th {
+      background-color: #ccc;
+      color: #000;
+    }
+
+    /* Main Menu */
+    .main-menu ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .main-menu li {
+      margin-bottom: 15px;
+    }
+
+    .main-menu a {
+      color: #000;
+      text-decoration: none;
+      display: block;
+      padding: 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .main-menu a:hover {
+      background-color: #ccc;
+    }
+
+    /* Discussion Section */
+    .discussion-section {
+      margin-bottom: 20px;
+    }
+
+    .discussion-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .discussion-card {
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      color: #000;
+      width: 100%;
+      max-width: 800px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .discussion-card:hover {
+      background-color: #ccc;
+      transform: scale(1.05);
+    }
+
+    .discussion-card .card-body {
+      padding: 15px;
+    }
+
+    .discussion-card .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .discussion-card .card-text {
+      font-size: 16px;
+    }
+
+    .discussion-card .card-link {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .create-group-button {
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: none;
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .create-group-button:hover {
+      background-color: #333;
+    }
+
+    /* Test Section */
+    .test-section {
+      margin-bottom: 20px;
+    }
+
+    .test-paper {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    .test-paper p {
+      margin-bottom: 10px;
+    }
+
+    .test-paper input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+    }
+
+    .test-timer {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    /* Test List Section */
+    .test-list {
+      margin-bottom: 20px;
+    }
+
+    .test-list h2 {
+      margin-bottom: 15px;
+    }
+
+    .test-card {
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      color: #000;
+      margin-bottom: 10px;
+    }
+
+    .test-card .card-body {
+      padding: 15px;
+    }
+
+    .test-card .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .test-card .card-text {
+      font-size: 16px;
+    }

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vidhya Bandhu</title>
+        <link rel="stylesheet" href="style.css">
+      </head>
+      <body>
+        <div class="container">
+          <nav class="navbar">
+            <a href="courses.html">Courses</a>
+            <a href="doubt.html">Doubt</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="test.html">Test</a>
+            <a href="discussion.html">Discussion</a>
+          </nav>
+          <main class="main-content">
+            <header class="main-header">
+              <div class="website-name">Vidhya Bandhu</div>
+              <div class="header-actions">
+                <input type="search" placeholder="Search...">
+                <button>Search</button>
+              </div>
+            </header>
+            <section class="login-section" id="loginSection">
+              <h2>Login</h2>
+              <form id="loginForm">
+                <input type="text" id="username" placeholder="Username">
+                <input type="password" id="password" placeholder="Password">
+                <button type="submit">Login</button>
+              </form>
+            </section>
+            <section class="dashboard-widgets">
+              <div class="widget">
+                <h3>5</h3>
+                <p>Courses Enrolled</p>
+              </div>
+              <div class="widget">
+                <h3>2</h3>
+                <p>Assignments Due</p>
+              </div>
+              <div class="widget">
+                <h3>85%</h3>
+                <p>Grades Achieved</p>
+              </div>
+              <div class="widget">
+                <h3>60 hrs</h3>
+                <p>Time Spent Learning</p>
+              </div>
+            </section>
+            <section class="charts-and-tables">
+              <div class="chart">
+                <h3>Performance Overview</h3>
+                <div class="bar-graph">
+                  <div class="bar" style="height: 80%; background-color: #29ABE2;" title="Attendance"></div>
+                  <div class="bar" style="height: 90%; background-color: #957DAD;" title="Marks"></div>
+                  <div class="bar" style="height: 75%; background-color: #F15A59;" title="Tests"></div>
+                  <div class="bar" style="height: 85%; background-color: #F9A03F;" title="Assignments"></div>
+                  <div class="bar" style="height: 82%; background-color: #90CAF9;" title="Overall"></div>
+                </div>
+                <div class="chart-labels">
+                  <span><i style="color: #29ABE2;"></i> Attendance</span>
+                  <span><i style="color: #957DAD;"></i> Marks</span>
+                  <span><i style="color: #F15A59;"></i> Tests</span>
+                  <span><i style="color: #F9A03F;"></i> Assignments</span>
+                  <span><i style="color: #90CAF9;"></i> Overall</span>
+                </div>
+              </div>
+              <div class="chart">
+                <h3>Performance Distribution</h3>
+                <div class="pie-chart">
+                  <div class="slice" style="--start: 0; --size: 25; background-color: #29ABE2;" title="Attendance"></div>
+                  <div class="slice" style="--start: 25; --size: 20; background-color: #957DAD;" title="Marks"></div>
+                  <div class="slice" style="--start: 45; --size: 15; background-color: #F15A59;" title="Tests"></div>
+                  <div class="slice" style="--start: 60; --size: 20; background-color: #F9A03F;" title="Assignments"></div>
+                  <div class="slice" style="--start: 80; --size: 20; background-color: #90CAF9;" title="Overall"></div>
+                </div>
+                <div class="chart-labels">
+                  <span><i style="color: #29ABE2;"></i> Attendance</span>
+                  <span><i style="color: #957DAD;"></i> Marks</span>
+                  <span><i style="color: #F15A59;"></i> Tests</span>
+                  <span><i style="color: #F9A03F;"></i> Assignments</span>
+                  <span><i style="color: #90CAF9;"></i> Overall</span>
+                </div>
+              </div>
+            </section>
+            <section class="leaderboard">
+              <h2>Leaderboard</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Aarav Sharma</td>
+                    <td>98</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Priya Patel</td>
+                    <td>95</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Aryan Singh</td>
+                    <td>92</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Diya Verma</td>
+                    <td>90</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Rohan Kumar</td>
+                    <td>88</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Anika Reddy</td>
+                    <td>85</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Varun Menon</td>
+                    <td>82</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Neha Gupta</td>
+                    <td>80</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Siddharth Iyer</td>
+                    <td>78</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Ishani Desai</td>
+                    <td>75</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </main>
+        </div>
+        <script>
+          document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            document.getElementById('loginSection').innerHTML = `<h2>Welcome, ${username}!</h2>`;
+          });
+        </script>
+      </body>
+    </html>
